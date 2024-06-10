@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'master.css' %}">
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <div class="form">
+      <form method="post">
+        {% csrf_token %}
+
+        <div class="form-group">
+          <div class="block">
+            {{ form_usuario.username.errors }}
+            <label>Usuário: </label>
+            <br>
+            {{ form_usuario.username }}
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="block">
+            {{ form_usuario.password1.errors }}
+            <label>Senha: </label>
+            <br>
+            {{ form_usuario.password1 }}
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="block">
+            {{ form_usuario.password2.errors }}
+            <label>Cofirme a senha: </label>
+            <br>
+            {{ form_usuario.password2 }}
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="submit" name="" value="Entrar" class="btn btn-primary">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 140%;
+}
+
+form{
+  padding-top: 40%;
+  display: grid;
+  justify-content: center;
+  width: 200%;
+  height: 200%;
+  border-style: solid;
+  border-width: thin;
+  box-shadow: 10px 10px;
+}
+
+.form{
+  display: grid;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.btn{
+  margin-bottom: 10%;
+  margin-left: 37%;
+  background: lightgreen;
+  border-style: solid;
+  box-shadow: 5px 5px;
+  border: none;
+}
+
+.btn:hover{
+  background: #65a865;
+}
